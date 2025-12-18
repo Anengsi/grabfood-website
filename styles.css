@@ -1,0 +1,138 @@
+/* Basic Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e8f5e9; /* Hijau muda */
+    color: #333;
+    font-size: 18px; /* Ukuran font standar lebih besar */
+}
+
+/* Navbar */
+nav {
+    background-color: #43a047; /* Hijau */
+    padding: 10px 0;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.navbar-links li a:hover {
+    color: #000;
+}
+
+/* Logo */
+.logo {
+    width: 120px;
+    height: auto;
+}
+
+/* Header */
+header {
+    background-color: #43a047; /* Hijau */
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+}
+
+h1 {
+    font-size: 3em; /* Ukuran font judul lebih besar */
+}
+
+h2 {
+    font-size: 2.5em;
+}
+
+/* Fitur Section */
+#fitur {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.fitur-title {
+    cursor: pointer;
+    color: #43a047;
+    font-size: 2.2em; /* Ukuran font sub-judul fitur lebih besar */
+    margin-bottom: 10px;
+}
+
+.fitur-title:hover {
+    text-decoration: underline;
+}
+
+.fitur-content {
+    display: none;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f1f8e9;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Menata teks dan gambar sejajar */
+.fitur-text {
+    flex: 1;
+    font-size: 1.5em; /* Menyesuaikan ukuran teks */
+    line-height: 1.6; /* Menambah jarak antar baris untuk kenyamanan membaca */
+}
+
+.fitur-image {
+    width: 40%; /* Membatasi gambar agar tidak terlalu besar */
+    height: auto;
+    margin-left: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #388e3c; /* Hijau gelap */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 40px;
+}
+
+/* Menyesuaikan ukuran teks untuk mobile atau layar kecil */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px; /* Ukuran font untuk perangkat mobile */
+    }
+
+    .fitur-title {
+        font-size: 1.8em; /* Ukuran font fitur untuk perangkat kecil */
+    }
+
+    .fitur-text {
+        font-size: 1.2em; /* Ukuran teks untuk perangkat kecil */
+    }
+
+    .fitur-image {
+        width: 100%; /* Gambar akan menyesuaikan ukuran layar */
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
